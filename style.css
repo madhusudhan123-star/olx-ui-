@@ -352,3 +352,264 @@ body {
     background-color: white;
     height: 100px;
 }
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f7f8f9;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #cecece;
+}
+
+.logo_image {
+    width: 50px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.location-select,
+.search-bar {
+    height: 40px;
+    border: 2px solid #002f34;
+    padding: 0 10px;
+}
+
+.location-select {
+    width: 30%;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+}
+
+.search-bar {
+    flex-grow: 1;
+    border-radius: 0;
+}
+
+.search-button {
+    background-color: #002f34;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.language-select {
+    border: none;
+    background: transparent;
+}
+
+.sell-button {
+    background-color: #fff;
+    color: #002f34;
+    border: 3px solid #3a77ff;
+    padding: 8px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    border-bottom: 1px solid #cecece;
+    background-color: white;
+}
+
+.category {
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+/* Ad banner */
+.ad-banner {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.ad-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Product grid */
+.recommendations {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 8px;
+}
+
+.product-price {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* App promo */
+.app-promo {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.app-promo-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app-promo-text {
+    margin-top: 10px;
+}
+
+.app-store-buttons {
+    margin-top: 20px;
+}
+
+.app-store-buttons img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+}
+
+.footer-content {
+    flex-direction: column;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+}
+
+.bottom-footer {
+    height: auto;
+    padding: 20px;
+}
+
+.company-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.company-logos img {
+    height: 30px;
+    margin: 10px;
+}
+
+.footer_copy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .search-container {
+        width: auto;
+        /* margin: 0 20px; */
+    }
+
+    .nav-links {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .app-promo {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .app-promo-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .app-promo-text {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .footer-content {
+        flex-direction: row;
+    }
+
+    .footer_copy {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
